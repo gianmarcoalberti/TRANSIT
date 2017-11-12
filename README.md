@@ -16,7 +16,7 @@ Data are fed into the toolbox via its **control panel**, which is depicted in th
 [![TRANSIT_control_panel.png](https://s18.postimg.org/5qbqm96p5/TRANSIT_control_panel.png)](https://postimg.org/image/jwrhhhhk5/)
 
 ### Parameters
-* `Wind Speed`: raster representing the speed of the wind in the study area. The speed must be expressed in km/h.
+* `Wind speed`: raster representing the speed of the wind in the study area. The speed must be expressed in km/h.
 
 * `Wind direction`: raster representing the direction of the wind in the study area. The direction must be expressed in degrees, following meteorological conventions (direction from which the wind is blowing).
 
@@ -33,18 +33,17 @@ Suggested horizontal factors for sail-powered navigation are: `1` for *running* 
 The user may want to use the drop-down menu to select acustomized table (in .txt format) whose content must be arranged in two columns with no headers: the first stores the `HRMA` values from 0 to 180 (inclusive), the second indicates the corresponding horizontal factor.
 
 * `Output_folder`: the folder in which the user wants to save all the outputs of the analysis. The following files will be produced:
-
-* * `wind_sp_msk` (masked wind speed raster)
-* * `wind_dir_msk` (masked wind direction raster)
-* * `w_sp_resc` (rescaled wind speed raster)
-* * `sea_lev_msk` (masked sea level raster)
-* * `pace_hkm` (pace raster, in h/km)
-* * `accum_cost` (accumulated cost raster)
-* * `acc_cst_adj` (adjusted accumulated cost raster)
-* * `backl` (backlink raster)
-* * `days` (adjusted accumulated cost expressed in days)
-* * `1day_contours` (shapefile representing isochrones at 1-days intervals)
-* * `3h_contours` (shapefile representing isochrones at 3-hours intervals)
+ + `wind_sp_msk` (masked wind speed raster)
+ + `wind_dir_msk` (masked wind direction raster)
+ + `w_sp_resc` (rescaled wind speed raster)
+ + `sea_lev_msk` (masked sea level raster)
+ + `pace_hkm` (pace raster, in h/km)
+ + `accum_cost` (accumulated cost raster)
+ + `acc_cst_adj` (adjusted accumulated cost raster)
+ + `backl` (backlink raster)
+ + `days` (adjusted accumulated cost expressed in days)
+ + `1day_contours` (shapefile representing isochrones at 1-days intervals)
+ + `3h_contours` (shapefile representing isochrones at 3-hours intervals)
 
 The `backlink` raster can be fed (along with the adjusted accumulated cost raster) into the ArcGIS' `Cost Path` tool to calculate the sail-powered navigation least-cost path from the source location to destination locations.
 
