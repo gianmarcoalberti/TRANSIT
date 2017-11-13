@@ -49,4 +49,4 @@ The `backlink` raster can be fed (along with the adjusted accumulated cost raste
 
 
 ## Installation
-As shown below, the toolbox can be quite easily installed. It suffices o right-click on top of the ArcGIS’ toolbox tree, then select `add Toolbox` from the pop-up menu, and then navigate through your PC folders to select the `TRANSIT.tbx` file.
+The toolbox can be quite easily installed. It suffices to right-click on top of the ArcGIS’ toolbox tree, then select `add Toolbox` from the pop-up menu, and then navigate through your PC folders to select the `TRANSIT.tbx` file.
